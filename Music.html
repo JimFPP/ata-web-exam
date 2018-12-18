@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="musicStyles.css">
+    
+    <title>Document</title>
+
+
+<style>
+
+body {
+
+    margin: 0%;
+    overflow-y: scroll;
+}
+
+
+.title{
+    position: absolute;
+    left: 0;
+    margin-top: 100px;
+    width: 100%;
+    text-align: left;
+    z-index: -1;
+    color: white;
+    background-color: black;
+    text-align: center ; 
+    padding: 20px 80px;
+    text-align: justify
+}
+
+.title_p{
+    text-align: left; 
+    font-size: 30px;
+    color: rgb(48, 122, 48);
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.caption{
+position: absolute;
+left: 0;
+top: 25%;
+width: 100%;
+text-align: left;
+color: #000;
+z-index: -1;
+}
+
+.caption span.border{
+background-color: #111;
+color: #fff;
+padding: 60px 25px;
+font-size: 25px;
+letter-spacing: 10px;
+}
+
+.container{
+    margin-top: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .child{
+    margin-top: 20%;
+    margin-left: 20%;
+    flex-grow: 1;
+}
+
+</style>
+
+</head>
+<body id='notes'>
+        
+    <canvas id="canvas" style="position:absolute; top: 0; z-index:-1"></canvas>
+
+    <form action="">
+            <input type="search">
+            <i class="fa fa-search"></i>
+          </form>
+
+    <nav class="menu" style="position:absolute">
+                <header>Menu <span>×</span></header>
+                <ol>
+                    <li class="menu-item"><a href="#0">Home</a></li>
+                    <li class="menu-item"><a href="#0">Artists</a></li>
+                    <li class="menu-item">
+                        <a href="#0">Genres</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item"><a href="#0">Big Widgets</a></li>
+                            <li class="menu-item"><a href="#0">Bigger Widgets</a></li>
+                            <li class="menu-item"><a href="#0">Huge Widgets</a></li>
+                        </ol>
+                    </li>
+                    <!-- <li class="menu-item">
+                        <a href="#0">Kabobs</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item"><a href="#0">Shishkabobs</a></li>
+                            <li class="menu-item"><a href="#0">BBQ kabobs</a></li>
+                            <li class="menu-item"><a href="#0">Summer kabobs</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item"><a href="#0">Contact</a></li> -->
+                </ol>
+                <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+
+               
+    </nav>
+
+    <div>
+        <div class="title">
+            <!-- <span class="border">hola</span> -->
+            <p class="title_p">MUSIC STORE</p>
+        </div>
+        <div class="container" style="margin-left:200px;">
+            <div>
+                <img class="child" src="Queen.png" style="border-radius: 50%;">
+            </div>
+            <div class="child" style="margin-top:20px; margin-left:100px">
+                <p style="font-size: 20px; font-weight: bold;">QUEEN - A Night at the Opera</p>
+                <p style="align:justify;  width: 600px;">A Night at the Opera is the fourth studio album by the British rock band Queen, <br>
+                    released on 21 November 1975 by EMI Records in the United Kingdom and by Elektra Records in the United States. <br>
+                    Produced by Roy Thomas Baker and Queen, it was reportedly the most expensive album ever recorded at the time of its release. 
+                    The album takes its name from the Marx Brothers film of the same name, which the band watched one night at the studio complex when recording.</p>
+            </div>
+        </div>
+       
+        <div class="container" style="top: 200px; margin-top: 300px;left: 300px;">
+            <div class="child">
+                <svg  id= heart height="50px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M340.8,98.4c50.7,0,91.9,41.3,91.9,92.3c0,26.2-10.9,49.8-28.3,66.6L256,407.1L105,254.6c-15.8-16.6-25.6-39.1-25.6-63.9  c0-51,41.1-92.3,91.9-92.3c38.2,0,70.9,23.4,84.8,56.8C269.8,121.9,302.6,98.4,340.8,98.4 M340.8,83C307,83,276,98.8,256,124.8  c-20-26-51-41.8-84.8-41.8C112.1,83,64,131.3,64,190.7c0,27.9,10.6,54.4,29.9,74.6L245.1,418l10.9,11l10.9-11l148.3-149.8  c21-20.3,32.8-47.9,32.8-77.5C448,131.3,399.9,83,340.8,83L340.8,83z"/></svg>
+            </div>
+
+            <div class="child">
+                <svg style="enable-background:new 0 0 48 48;" version="1.1" viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                    .st0{display:none;}
+                    .st1{fill:none;stroke:#303030;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st2{fill:#303030;}
+                </style><g class="st0" id="Padding__x26__Artboard"/><g id="Icons"><g><polygon class="st1" points="19.25989,36.43648 11.43553,36.43648 10.13715,23.25793 19.25989,23.25793   "/><circle class="st1" cx="16.39824" cy="33.30838" r="1.03556"/><path class="st1" d="M19.33568,33.41838c0.34385,0,0.68738-0.00637,1.03132-0.01331    c0.24079-0.00486,0.39902,0.14823,0.59042,0.27801c0.23781,0.16125,0.4763,0.32171,0.72131,0.4719    c0.16461,0.1009,0.35297,0.24185,0.53977,0.29492l6.92604,0.00805l4.75441,0.00126c0.92,0,1.78009-0.56164,1.78009-1.48164    c0-0.93,0.0779-1.87962-0.8421-1.87962h0.1076c0.93,0,1.44474-0.7843,1.44474-1.7143c0-0.92-0.25835-1.6557-1.18835-1.6557    h0.68362c0.92,0,1.40993-0.80351,1.40993-1.73351c0-0.92-0.25147-1.62649-1.17147-1.62649h0.32154    c0.92,0,1.41831-0.84273,1.41831-1.76273c0-0.93-0.49831-1.60727-1.41831-1.60727l-8.70333,0.01419    c0.20236-0.27825,1.23094-4.09943,1.15505-4.833c-0.05301-0.51238-0.20232-1.02329-0.32661-1.52153    c-0.17408-0.69784-0.36239-1.3919-0.54974-2.08626c-0.07708-0.28568-0.28528-0.3673-0.51256-0.52752    c-0.15088-0.10636-0.30939-0.20281-0.47664-0.2813c-0.28087-0.13181-0.58852-0.21334-0.90056-0.19692    c-0.39093,0.02057-0.74333,0.19915-1.03823,0.44869c-0.26472,0.224-0.60664,0.51329-0.606,0.88073    c0.00237,0.69313,0.00176,1.38629,0.002,2.07943c0.00012,0.35174,0.00017,0.70349,0.00019,1.05523    c0.00002,0.31472,0.05031,0.61623-0.11645,0.89495c-0.22356,0.44712-0.52108,0.8709-0.77785,1.30006    c-0.20963,0.35037-0.41811,0.70144-0.62719,1.05215c-0.40336,0.6766-0.80654,1.35332-1.20886,2.03053    c-0.26623,0.44813-0.59877,0.89941-0.81098,1.37689c-0.05059,0.11383-1.68689,1.13181-1.68689,1.13181"/><line class="st1" x1="12.02338" x2="14.69852" y1="24.78613" y2="24.78613"/><line class="st1" x1="15.87054" x2="16.69493" y1="24.78613" y2="24.78613"/></g></g></svg> 
+            </div>
+
+        </div>
+
+
+
+    </div>      
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="musicScript.js"></script>
+</body>
+</html>
